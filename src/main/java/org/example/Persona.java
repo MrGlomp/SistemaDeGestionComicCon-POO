@@ -20,9 +20,6 @@ public abstract class Persona {
     // Métodos de negocio a completar por el estudiante
     public void agregarCategoria(Categoria categoria) {
         // TODO: Completar lógica método (añadir la categoría a la lista)
-        if (categoria){
-
-        }
     }
 
     public void eliminarCategoria(Categoria categoria) {
