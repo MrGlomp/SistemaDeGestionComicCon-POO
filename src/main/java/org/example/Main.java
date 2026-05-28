@@ -18,6 +18,26 @@ public class Main {
         // --- SECCIÓN DE PRUEBAS ---
         // Ej: agregar personas a categorías, meter miembros a la agrupación, montar el panel y llamar a mostrarInformacion().
 
+        cosplayer1.agregarCategoria(animeCat);
+        artista1.agregarCategoria(arteCat);
 
+        comunidadAnime.agregarMiembro(cosplayer1);
+
+        panelPrincipal.agregarPanelista(cosplayer1);
+        panelPrincipal.agregarPanelista(comunidadAnime);
+
+        System.out.println("----INFORMACION PANEL----");
+        panelPrincipal.mostrarInformacion();
+        System.out.println("\n----INFORMACION COSPLAYER----");
+        cosplayer1.mostrarInformacion();
+        System.out.println("\n----INFORAMCION ARTISTA----");
+        artista1.mostrarInformacion();
+        System.out.println("\n----INFORMACION AGRUPACION----");
+        comunidadAnime.mostrarInformacion();
+
+        System.out.println("\n----PRESENTACION COSPLAY----");
+        cosplayer1.realizarPresentacion();
+        System.out.println("\n----PRESENTACION ARTISTA----");
+        artista1.realizarPresentacion();
     }
 }

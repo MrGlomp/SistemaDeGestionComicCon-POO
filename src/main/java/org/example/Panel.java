@@ -16,7 +16,11 @@ public class Panel {
 
     public void agregarPanelista(Object panelista) {
         // TODO: Completar lógica método (debe validar si es instancia de Persona o Agrupacion antes de añadir)
-
+        if (panelista instanceof Persona || panelista instanceof Agrupacion) {
+            panelistas.add(panelista);
+        } else {
+            System.out.println("Error, ingrese un dato valido");
+        }
     }
 
     public void eliminarPanelista(Object panelista) {
@@ -26,6 +30,18 @@ public class Panel {
 
     public void mostrarInformacion() {
         // TODO: Completar lógica método (mostrar hora, tema/categoría y quiénes exponen)
+        System.out.println("Hora Presentacion: "+horaPresentacion);
+        System.out.println("Categoria: "+categoria.getNombre());
+        System.out.println("Quienes Presentan: ");
+        for (Object panelista:panelistas) {
+            if (panelista instanceof Persona) {
+                Persona p = (Persona) panelista;
+                System.out.println("Participante: "+p.getNombre());
+            } else if (panelista instanceof Agrupacion) {
+                Agrupacion a = (Agrupacion) panelista;
+                System.out.println("Agrupacion: "+a.getNombreGrupo());
+            }
+        }
     }
 
     // Getters y Setters

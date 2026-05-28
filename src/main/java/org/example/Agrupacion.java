@@ -26,9 +26,9 @@ public class Agrupacion {
 
     public void mostrarInformacion() {
         // TODO: Completar lógica método (detalles del grupo, su categoría y recorrer la lista de miembros)
-        System.out.println("----INFORMACION AGRUPACION----");
         System.out.println("Nombre: "+nombreGrupo);
-        System.out.println("Categoria: "+categoriaPrincipal);
+        System.out.println("Categoria: "+categoriaPrincipal.getNombre());
+        System.out.println("Miembros: ");
         for (Persona p:miembros) {
             System.out.println(""+p.getNombre());
         }
