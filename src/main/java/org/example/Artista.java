@@ -1,5 +1,7 @@
 package org.example;
 
+import java.sql.SQLOutput;
+
 public class Artista extends Persona implements Interactivable {
     private String marcaTableta;
     private int cantidadArtbooksPublicados;
@@ -13,6 +15,12 @@ public class Artista extends Persona implements Interactivable {
     @Override
     public void mostrarInformacion() {
         // TODO: Completar lógica método (imprimir datos base de Persona y específicos de Artista)
+        System.out.println("----INFORMACION ARTISTA----");
+        System.out.println("Nombre: "+nombre);
+        System.out.println("Pais de Origen: "+paisOrigen);
+        System.out.println("Edad: "+edad);
+        System.out.println("Marca Tableta: "+marcaTableta);
+        System.out.println("Cantidad Artbooks Publicados: "+cantidadArtbooksPublicados);
     }
 
     @Override

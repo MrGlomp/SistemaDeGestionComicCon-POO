@@ -13,6 +13,10 @@ public class Categoria {
 
     public void mostrarInformacion() {
         // TODO: Completar lógica método (imprimir los atributos de la categoría)
+        System.out.println("----INFORMACION CATEGORIA----");
+        System.out.println("Nombre: "+nombre);
+        System.out.println("Numero de Cupos Maximos: "+numeroCuposMaximos);
+        System.out.println("Popularidad Estimada: "+popularidadEstimada);
     }
 
     // Getters y Setters

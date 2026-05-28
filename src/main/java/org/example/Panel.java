@@ -16,10 +16,12 @@ public class Panel {
 
     public void agregarPanelista(Object panelista) {
         // TODO: Completar lógica método (debe validar si es instancia de Persona o Agrupacion antes de añadir)
+
     }
 
     public void eliminarPanelista(Object panelista) {
         // TODO: Completar lógica método
+        panelistas.remove(panelista);
     }
 
     public void mostrarInformacion() {
